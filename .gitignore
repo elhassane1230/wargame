@@ -1,0 +1,21 @@
+# Compiled output
+bin/
+out/
+target/
+*.class
+
+# IDE
+*.iml
+.idea/
+.classpath
+.project
+.settings/
+.vscode/
+
+# Runtime / saves / temp
+tmp/
+*.ser
+saves/*
+!saves/.gitkeep
+
+.DS_Store
