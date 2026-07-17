@@ -2,7 +2,7 @@
 
 A 2D **turn-based strategy game** on a hexagonal grid, written in **Java (Swing)**
 with an **MVC** architecture. Lead an army of five unit types across varied terrain,
-manage fog of war, and eliminate your opponents — locally against other players or
+manage fog of war, and eliminate your opponents, locally against other players or
 against the AI.
 
 ![Java](https://img.shields.io/badge/Java-17-blue)
@@ -67,7 +67,7 @@ depends on terrain defense bonus and a random factor.
 
 ## Controls
 
-- **Click a unit** to select it — reachable hexes are highlighted in green,
+- **Click a unit** to select it, reachable hexes are highlighted in green,
   enemies in range in red.
 - **Click a highlighted hex** to move there; **click an enemy in range** to attack;
   with the healer, **click an ally** to heal.
@@ -95,7 +95,7 @@ Requires **JDK 17+**. Media files must be present under `assets/` (see
 [`assets/README.md`](assets/README.md)). Run from the **project root** so the
 relative asset paths resolve.
 
-**Recommended — compile with Maven, then launch directly:**
+**Recommended, compile with Maven, then launch directly:**
 
 ```bash
 mvn compile
@@ -128,7 +128,7 @@ This is a student project. A few
 things worth knowing, and good candidates for future work:
 
 - **Static engine**: `LogiqueJeu` is an all-static "god object" and the model
-  depends on the controller — the MVC separation is loose.
+  depends on the controller, the MVC separation is loose.
 - **Turn handling uses busy-wait loops** (spin-waiting on click flags) rather than
   an event-driven model. The shared flags are now `volatile` so this works
   reliably across threads, but an event-driven design would be cleaner.
